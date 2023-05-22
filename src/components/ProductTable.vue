@@ -21,8 +21,8 @@
           >
             <td>{{ product.id }}</td>
             <td>{{ product.title }}</td>
-            <td>{{ product.price }}</td>
             <td>{{ product.priceDiscount }}</td>
+            <td>{{ product.price }}</td>
             <td>{{ product.currency }}</td>
           </tr>
         </tbody>

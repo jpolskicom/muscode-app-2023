@@ -12,10 +12,11 @@
         <slot name="content" />
         <template v-if="prices">
           <h4 class="c-tile__price" v-if="prices.price">
-            {{ prices.price }} {{ prices.currency }}
+            {{ prices.priceDiscount ? prices.priceDiscount : prices.price }}
+            {{ prices.currency }}
           </h4>
           <div class="c-tile__priceDiscount" v-if="prices.priceDiscount">
-            {{ prices.priceDiscount }} {{ prices.currency }}
+            {{ prices.price }} {{ prices.currency }}
           </div>
         </template>
       </span>
