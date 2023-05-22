@@ -1,0 +1,44 @@
+body, #app {
+    font-size: $textSize;
+    color: $textColor;
+    background-color: $backgroundColor;
+}
+
+* {
+    font-family: $fontFamily;
+}
+
+input[type=text], input[type=number], select {
+    font-size: 1rem;
+    border-bottom: 1px solid $borderColor;
+    padding: .25rem;
+    color: $textColor;
+}
+
+ul, li {
+    font-size: 1rem;
+}
+label {
+    display: inline-block;
+    width: 100%;
+    padding: .5rem 0;
+    color: $borderColor;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        color: $headingColor;
+        @if $i == 1 {
+            font-size: 1.5rem;
+        }
+        @if $i == 2 {
+            font-size: 1.2rem;
+        }
+        @if $i == 3 {
+            font-size: 1.2rem;
+        }
+        @if $i == 4 {
+            font-size: 1.1rem;
+        }
+    }
+}
